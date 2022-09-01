@@ -43,7 +43,7 @@ order: 3
 
 ```tsx
 import React from 'react';
-import Test1 from './test1';
+import Test1 from '../../src/javascript/stoppropagation/test1';
 export default () => <Test1 />;
 ```
 
@@ -53,7 +53,7 @@ export default () => <Test1 />;
 
 ```tsx
 import React from 'react';
-import Test2 from './test2';
+import Test2 from '../../src/javascript/stoppropagation/test2';
 export default () => <Test2 />;
 ```
 
@@ -63,7 +63,7 @@ export default () => <Test2 />;
 
 ```tsx
 import React from 'react';
-import Test3 from './test3';
+import Test3 from '../../src/javascript/stoppropagation/test3';
 export default () => <Test3 />;
 ```
 
@@ -73,7 +73,7 @@ export default () => <Test3 />;
 
 ```tsx
 import React from 'react';
-import Test4 from './test4';
+import Test4 from '../../src/javascript/stoppropagation/test4';
 export default () => <Test4 />;
 ```
 
@@ -83,7 +83,7 @@ export default () => <Test4 />;
 
 ```tsx
 import React from 'react';
-import Test5 from './test5';
+import Test5 from '../../src/javascript/stoppropagation/test5';
 export default () => <Test5 />;
 ```
 
@@ -93,7 +93,7 @@ export default () => <Test5 />;
 
 ```tsx
 import React from 'react';
-import Test6 from './test6';
+import Test6 from '../../src/javascript/stoppropagation/test6';
 export default () => <Test6 />;
 ```
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 export default () => {
+  const [jsonStr, setJsonStr] = useState('');
   const [sqlList, setSqlList] = useState<String[]>([]);
   const toGenSql = () => {
     const textareaDom = document.getElementById('textarea') as HTMLInputElement;
@@ -17,11 +18,16 @@ export default () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <textarea id="textarea" style={{ width: '100%', height: 400 }}></textarea>
+      <textarea
+        id="textarea"
+        style={{ width: '100%', height: 400 }}
+        value={jsonStr}
+        onChange={(d) => setJsonStr(d.target.value)}
+      />
       <button
         onClick={() => toGenSql()}
         style={{ width: '100%', height: 45, margin: '20px 0px' }}
-        disabled={!sqlList.length}
+        disabled={!jsonStr}
       >
         生成SQL语句
       </button>

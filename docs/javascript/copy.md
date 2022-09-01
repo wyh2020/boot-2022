@@ -47,7 +47,7 @@ document.execCommand('copy', true);
 
 ```tsx
 import React from 'react';
-import Test1 from './test1';
+import Test1 from '../../src/javascript/copy/test1';
 export default () => <Test1 />;
 ```
 
@@ -57,7 +57,7 @@ export default () => <Test1 />;
 
 ```tsx
 import React from 'react';
-import Test2 from './test2';
+import Test2 from '../../src/javascript/copy/test2';
 export default () => <Test2 />;
 ```
 
@@ -71,7 +71,7 @@ export default () => <Test2 />;
 
 兼容性
 
-  <img src="./images/execCommand.png" height="300">
+  <img src="../../src/javascript/copy/images/execCommand.png" height="300">
 
 #### 方法 2: `Clipboard API`
 
@@ -99,13 +99,13 @@ if (navigator.clipboard) {
 
 ```tsx
 import React from 'react';
-import Test3 from './test3';
+import Test3 from '../../src/javascript/copy/test3';
 export default () => <Test3 />;
 ```
 
 兼容性
 
-<img src="./images/writeText.png" height="300">
+<img src="../../src/javascript/copy/images/writeText.png" height="300">
 
 #### 方法 3: 方法 1 + 方法 2
 
