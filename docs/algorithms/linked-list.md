@@ -15,11 +15,11 @@ order: 1
 
 更快的访问，如随机访问，是不可行的。与链表相比，数组具有更好的缓存位置。
 
-  <img src="../../src/images/linked-list/linked-list-01.png" height="120">
+  <img src="../images/linked-list/linked-list-01.png" height="120">
 
 链表有两种类型：单链表和双链表。上面给出的例子是一个单链表，这里有一个双链表的例子：
 
-  <img src="../../src/images/linked-list/linked-list-02.png" height="120">
+  <img src="../images/linked-list/linked-list-02.png" height="120">
 
 #### Node 类
 

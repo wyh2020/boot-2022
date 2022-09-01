@@ -71,7 +71,7 @@ export default () => <Test2 />;
 
 兼容性
 
-  <img src="../../src/images/copy/execCommand.png" height="300">
+  <img src="../images/copy/execCommand.png" height="300">
 
 #### 方法 2: `Clipboard API`
 
@@ -105,7 +105,7 @@ export default () => <Test3 />;
 
 兼容性
 
-<img src="../../src/images/copy/writeText.png" height="300">
+<img src="../images/copy/writeText.png" height="300">
 
 #### 方法 3: 方法 1 + 方法 2
 
