@@ -26,7 +26,7 @@ jobs:
       # 打包代码
       - name: Build Project
         run: |
-          npm install
+          npm install --force
           npm run build
 
       # 部署到github
