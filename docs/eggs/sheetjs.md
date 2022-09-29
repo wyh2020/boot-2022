@@ -15,3 +15,8 @@ import Test1 from '../../src/eggs/sheetjs/test1';
 
 export default () => <Test1 />;
 ```
+
+## 参考资料
+
+- [sheetjs](https://github.com/SheetJS/sheetjs)
+- [react-data-grid](https://github.com/adazzle/react-data-grid)
