@@ -25,5 +25,10 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react-data-grid": "^7.0.0-beta.18",
+    "xlsx": "^0.18.5"
   }
 }
