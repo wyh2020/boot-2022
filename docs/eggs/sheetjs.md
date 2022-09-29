@@ -11,7 +11,7 @@ order: 2
 
 ```tsx
 import React from 'react';
-import Sheet from '../../src/eggs/json-to-sql/sheetjs';
+import Test1 from '../../src/eggs/sheetjs/test1';
 
-export default () => <Sheet />;
+export default () => <Test1 />;
 ```
