@@ -5,7 +5,8 @@ order: 3
 
 ## merge-images
 
-保证2张图大小一致
+保证 2 张图大小一致
+第二张图会覆盖在第一张图上面
 
 ```tsx
 import React from 'react';
@@ -17,4 +18,3 @@ export default () => <Test1 />;
 ## 参考资料
 
 - [merge-images](https://github.com/lukechilds/merge-images)
-

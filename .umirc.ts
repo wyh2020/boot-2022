@@ -14,4 +14,11 @@ export default defineConfig({
   // more config: https://d.umijs.org/config
   base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
   publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  navs: [
+    null, // null 值代表保留约定式生成的导航，只做增量配置
+    {
+      title: 'GitHub',
+      path: 'https://github.com/wyh2020/boot-2022',
+    },
+  ],
 });

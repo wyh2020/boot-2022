@@ -22,7 +22,10 @@ function EmptyRowsRenderer() {
 }
 
 function ws_to_rdg(ws: WorkSheet): RowCol {
-  const rows: any = utils.sheet_to_json(ws, { header: 1 });
+  /* create an array of arrays */
+  const rows = utils.sheet_to_json(ws, { header: 1 });
+
+  /* create column array */
   const range = utils.decode_range(ws['!ref'] || 'A1');
   const columns = Array.from({ length: range.e.c + 1 }, (_, i) => ({
     key: String(i),
@@ -81,7 +84,6 @@ function genWbData(wb: any) {
   const workbook = utils.book_new();
   for (const sheetName of sheetNames) {
     const ws = wb.Sheets[sheetName];
-    // 处理数据
     const jsonData = utils.sheet_to_json(ws, { header: 1 });
     const newJsonData = to_json(jsonData);
     var newWs = utils.json_to_sheet(newJsonData);
