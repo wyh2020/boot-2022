@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/file-saver": "^2.0.5",
+    "@types/lodash": "^4.14.186",
     "@types/merge-images": "^1.2.1",
     "dumi": "1.1.47",
     "lint-staged": "^10.0.7",
@@ -29,6 +30,7 @@
     "yorkie": "^2.0.0"
   },
   "dependencies": {
+    "date-fns": "^2.29.3",
     "file-saver": "^2.0.5",
     "lodash": "^4.17.21",
     "merge-images": "^2.0.0",

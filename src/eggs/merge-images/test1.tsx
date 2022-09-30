@@ -3,12 +3,12 @@ import mergeImages from 'merge-images';
 import { saveAs } from 'file-saver';
 
 function base64toFile(dataURI: any, suffix: any) {
-  var byteString = atob(dataURI.split(',')[1]);
+  const byteString = atob(dataURI.split(',')[1]);
   // 获取文件类型
-  // var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
-  var ab = new ArrayBuffer(byteString.length);
-  var ia = new Uint8Array(ab);
-  for (var i = 0; i < byteString.length; i++) {
+  // const mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+  const ab = new ArrayBuffer(byteString.length);
+  const ia = new Uint8Array(ab);
+  for (let i = 0; i < byteString.length; i++) {
     ia[i] = byteString.charCodeAt(i);
   }
   return new Blob([ab], { type: `image/${suffix}` });

@@ -33,7 +33,7 @@ function ws_to_rdg(ws: WorkSheet): RowCol {
 
 function arrayify(rows: any[]): Row[] {
   return rows.map((row) => {
-    var length = Object.keys(row).length;
+    let length = Object.keys(row).length;
     for (; length > 0; --length) if (row[length - 1] != null) break;
     return Array.from({ length, ...row });
   });
@@ -84,7 +84,7 @@ function genWbData(wb: any) {
     // 处理数据
     const jsonData = utils.sheet_to_json(ws, { header: 1 });
     const newJsonData = to_json(jsonData);
-    var newWs = utils.json_to_sheet(newJsonData);
+    const newWs = utils.json_to_sheet(newJsonData);
 
     const rowsRes = ws_to_rdg(newWs);
     const workSheet = rdg_to_ws(rowsRes.rowsData);
