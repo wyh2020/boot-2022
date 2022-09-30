@@ -69,7 +69,7 @@ export default () => {
           fontSize: '24px',
         }}
       >
-        点击上传背景图片
+        点击上传第一张图片(任意格式)
         <input
           type="file"
           accept="image/*"
@@ -86,7 +86,7 @@ export default () => {
           fontSize: '24px',
         }}
       >
-        点击上传其他图片
+        点击上传第二张图片(png格式)(覆盖在第一张图上面)
         <input
           type="file"
           accept="image/*"
