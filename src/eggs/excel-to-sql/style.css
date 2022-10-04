@@ -1,0 +1,18 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.textDiv{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.textSpan{
+  padding-right: 16px;
+}
+
+.textButton{
+  margin-left: 16px;
+}

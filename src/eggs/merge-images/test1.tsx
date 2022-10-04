@@ -44,7 +44,7 @@ export default () => {
   };
 
   const toMerge = () => {
-    mergeImages([imgage1, imgage2]).then(
+    mergeImages([imgage1, imgage2], { format: `image/${suffix}` }).then(
       (b64: any) => ((document as any).getElementById('result').src = b64),
     );
   };
