@@ -1,17 +1,17 @@
 ---
-title: 4.资源利用率
-order: 4
+title: 1.未配置接口去重
+order: 1
 ---
 
-## 资源利用率
+## sheetjs
 
-根据 JIRA 和考勤数据来计算
+根据【接口地址】去重
 
-需要同时下载你的 JIRA 单数据和 OA 上的考勤数据
+文件来自`SWP`导出的 Excel 文件
 
 ```tsx
 import React from 'react';
-import Test1 from '../../src/eggs/kaoqin/test1';
+import Test1 from '../../src/eggs/sheetjs/test1';
 
 export default () => <Test1 />;
 ```

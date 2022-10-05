@@ -1,26 +1,15 @@
 ---
-title: 1.JsonToSql
-order: 1
+title: 6.JsonToSql(item_info表)
+order: 6
 ---
 
-## 生成 Json 入参
+## JsonToSql(item_info表)
 
-从请求字符串中获取 Json 入参
-
-```tsx
-import React from 'react';
-import Test1 from '../../src/eggs/json-to-sql/test1';
-
-export default () => <Test1 />;
-```
-
-## JsonToSql
-
-`Json` 字符串转换为 `Insert` 语句
+`Json` 字符串转换为单条`Insert` 语句
 
 ```tsx
 import React from 'react';
-import Test2 from '../../src/eggs/json-to-sql/test2';
+import Test2 from '../../src/eggs/json-to-sql/test3';
 
 export default () => <Test2 />;
 ```
