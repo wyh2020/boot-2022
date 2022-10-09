@@ -17,7 +17,7 @@ export const genExportData = (list: any[]) => {
 
   return (list || []).map((l) => {
     const sourceRate =
-    l['JIRA工作量(小时)'] && l['应出勤人天(小时)'] ? `${((l['JIRA工作量(小时)'] / (l['应出勤人天(小时)'] / 8)) * 100).toFixed(2)}%` : '';
+    l['JIRA工作量(小时)'] && l['应出勤人天(小时)'] ? `${((l['JIRA工作量(小时)'] / (l['应出勤人天(小时)'])) * 100).toFixed(2)}%` : '';
     const jiabanRate =
     l['实际出勤人天(小时)'] && l['应出勤人天(小时)'] ? `${((l['实际出勤人天(小时)'] / l['应出勤人天(小时)']) * 100).toFixed(2)}%` : '';
     return {
