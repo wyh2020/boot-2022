@@ -57,6 +57,7 @@ export default () => {
           const ctx = canvas.getContext('2d');
           ctx!.clearRect(0, 0, 800, 800);
           setImage1(img);
+          setScaleValue(1);
           ctx!.drawImage(img, 0, 0);
           if (image2) {
             const tempCanvas2 = document.getElementById(
@@ -126,9 +127,23 @@ export default () => {
             const tempCanvas1 = document.getElementById(
               'tempCanvas1',
             ) as HTMLCanvasElement;
+
+            const imgWidth = image1.naturalWidth * scaleValue;
+            const imgHeight = image1.naturalHeight * scaleValue;
+
+            const sx = (image1.naturalWidth - imgWidth) / 2;
+            const sy = (image1.naturalHeight - imgHeight) / 2;
+
+            const tempCtx1 = tempCanvas1.getContext('2d');
+            tempCtx1!.clearRect(0, 0, tempCanvas1.width, tempCanvas1.height);
+            tempCanvas1.width = imgWidth;
+            tempCanvas1.height = imgHeight;
+            tempCtx1!.scale(scaleValue, scaleValue);
+            tempCtx1!.drawImage(image1, 0, 0);
+
             clearImage();
             drawDefaultImage();
-            ctx?.drawImage(tempCanvas1, 0, 0);
+            ctx?.drawImage(tempCanvas1, sx, sy, imgWidth, imgHeight);
           }
 
           ctx?.drawImage(tempCanvas2, 0, 0, 800, 800);
