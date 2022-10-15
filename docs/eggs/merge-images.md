@@ -1,6 +1,6 @@
 ---
-title: 3.图片合成【纯前端】
-order: 3
+title: 3.2.图片合成>merge-images
+order: 3.2
 ---
 
 ## merge-images
@@ -18,3 +18,4 @@ export default () => <Test1 />;
 ## 参考资料
 
 - [merge-images](https://github.com/lukechilds/merge-images)
+- [Java 可以使用 thumbnailator]https://github.com/coobird/thumbnailator
